@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<header>
+
+
+<body background="images/sky.jpg">
+
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" style="padding: 5px;"  src="images/andela.png"><img src="images/andela.png" alt="logo"></a>
+      <!-- <img src="images/andela.png"/> -->
+
+
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar ">
+      <ul class="nav navbar-nav nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About us</a></li>
+        <li><a href="#">Our Client </a></li> 
+        <li><a href="#">What we do</a></li> 
+        <li><a href="#">Employees</a></li>
+        <li><a href="#">Team </a></li> 
+        <li><a href="#">Contact us</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right ">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+<h1>
+   <h1 class="amity">Amity Staff Calculator</h1>
+
+</hearder>
+
+
+<div class="container">
+	<div class="row myrow">
+		<div class="col-sm-4 col-sm-offset-4">
+			<div class="panel">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h1>Employee Login</h1>
+					</div>
+					<div class="panel-body mypanel">
+						<form class="form-horizontal">
+							<div class=form-group>
+								<label for="Username">Username</label>
+								<input id ="username" type="text" name="username" placeholder="enter username"class="form-control"/>
+							</div>
+							<div class=form-group>
+								<label for="password">Password</label>
+								<input id ="password" type="password" name="password"  class="form-control"/>
+							</div>
+							<div class=form-group>
+								<div class="center-btn">
+									<!--<input type="submit" value="Login"  onclick="checkForm();" class="btn btn-success btn-lg"/>-->
+									<a href="#" onclick="checkForm()" class="btn btn-lg btn-success">Login</a>
+								</div>
+								
+							</div>
+
+						</form>
+					</div>
+					<div class="panel-footer">
+						<p class="center">App to Calculate Employees Salaries</p>
+						<small><p class="center">Powered by Group Three. &copy; 2016</p></small>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+</div>
+
+
+
+	
+
+
+
+<script>  
+function checkForm() {
+           //username
+           
+           if (document.getElementById('username').value === "") {
+               window.alert('Enter UserName');
+               return;
+           }
+               //password
+           else if (document.getElementById('password').value === "") {
+               window.alert('Enter Password');
+               return;
+           }
+           else if (document.getElementById('password').value === "sheyi" && document.getElementById('username').value === "sheyiadekoya") {
+               window.location.href = "form.html";
+              // return false;
+           }
+               //email
+           else  {
+               window.alert('Invalid Username or Password');
+               return false;
+           }
+            
+       }
+  
+	
+</script>
+
+
+
+
+
+
+</body>
+</html>

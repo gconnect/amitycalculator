@@ -1,0 +1,46 @@
+.center-btn{
+    width: 100%;
+    margin: 0 auto;
+}
+.mypanel{
+    padding: 50px;
+}
+.center{
+    text-align: center;
+}
+.amity{
+    color:white; 
+    text-align:center; 
+    font-size: 50px;
+    margin: 100px 10px 30px 10px;
+}
+.myrow{
+    margin-bottom: 60px;
+}
+.remove-bullet{
+    list-style: none;
+}
+.inline{
+    display: inline !important;
+}
+
+.calc-row{
+    margin-top: 100px;
+}
+
+.pad{
+    padding: 5px;
+}
+.mylabel{
+    font-size: 145%;
+}
+
+.list-group{
+    font-weight: bold;
+}
+
+@media (max-width: 976px){
+    .add-bm{
+        margin-bottom: 20px;
+    }
+}
